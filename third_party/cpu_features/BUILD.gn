@@ -42,6 +42,8 @@ source_set("cpuinfo") {
     sources += [ "src/src/impl_mips_linux_or_android.c" ]
   } else if (current_cpu == "ppc") {
     sources += [ "src/src/impl_ppc_linux.c" ]
+  } else if (current_cpu == "loongarch64") {
+    sources += [ "src/src/impl_loongarch_linux.c" ]
   } else if (current_cpu == "riscv64") {
     sources += [ "src/src/impl_riscv_linux.c" ]
   } else {
